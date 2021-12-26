@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    background: url(https://cdn.pixabay.com/photo/2014/12/02/21/53/beer-554619_960_720.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile_card{
+    width: 400px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+ul{
+    width:4000px; /* or whatever width you want. */
+   max-width:400px; /* or whatever width you want. */
+   display: inline-block;
+    background: #462303;
+    padding: 60px 40px;
+    list-style-type: none;
+}
+img{
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(130deg,#B76300,#ECE7EB);
+    margin: auto;
+    border-radius: 50%;
+    background-size: 200% 200%;
+    animation: animated-gradient 2s linear infinite;
+}
+@keyframes animated-gradient {
+    25%{
+        background-position: left bottom;
+    }
+    50%{
+        background-position: right bottom;
+    }
+    75%{
+        background-position: right top;
+    }
+    100%{
+        background-position: left top;
+    }
+    
+}
+
+.beer_name{
+    color:#DBC3C1 ;
+}
+.beer_brand{
+    color:#CA9B8D ;
+}
+.beer_hop{
+    color: #DC8338;
+}
+.beer_alcohol{
+    color: #B86500;
+}
+
+span{
+    color: #E1E2E6;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.result{
+    color: #E1E2E6;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+button{
+    display: inline-block;
+    padding: 12px 50px;
+    color: #BF6701;
+    border: 2px solid #BF6701;
+    border-radius: 6px;
+    margin-top: 16px;
+    transition: .3s linear;
+}
+
+.user {
+    
+    display: inline-block;
+    float:right;
+}
